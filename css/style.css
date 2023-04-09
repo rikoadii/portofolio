@@ -52,6 +52,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.8;
+  padding: 10vw;
 }
 
 .menu li:nth-child(1):hover::before {
