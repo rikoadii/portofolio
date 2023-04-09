@@ -35,40 +35,8 @@ nav {
   list-style: none;
 }
 
-.menu li:hover {
-  background-image: none;
-  cursor: pointer;
-}
-
-.menu li:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 25vw;
-  bottom: 0;
-  background-image: url('');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.8;
-  padding: 10vw;
-}
-
-.menu li:nth-child(1):hover::before {
-  background-image: url('../image/sticker-1.png');
-}
-.menu li:nth-child(2):hover::before {
-  background-image: url('../image/sticker-2.png');
-}
-.menu li:nth-child(3):hover::before {
-  background-image: url('../image/sticker-3.png');
-}
-.menu li:nth-child(4):hover::before {
-  background-image: url('../image/sticker-4.png');
-}
-.menu li:nth-child(5):hover::before {
-  background-image: url('../image/sticker-5.png');
+.menu li a:hover {
+  border-bottom: 1px solid red;
 }
 
 a {
