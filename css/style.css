@@ -1,0 +1,266 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  padding: 0 15px;
+}
+
+.logo {
+  display: flex;
+  padding-right: 3px;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.menu {
+  display: flex;
+  gap: 2em;
+  padding-right: 59px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid red;
+  padding: 1vw;
+  font-weight: bold;
+  font-size: large;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20vh;
+}
+
+.section-profile, .section-contact, .section-skills, .section-certificate {
+  margin-bottom: 20vh;
+}
+
+.section-profile {
+  max-width: 60vw;
+  text-align: start;
+  justify-content: center;
+  display: flex;
+  gap: 3em;
+  margin-top: 20vh;
+  padding-top: 10vh;
+}
+
+.section-profile .icon-profile img {
+  border-radius: 3%;
+}
+
+.section-profile .description-profile .grade-profile {
+  display: inline-flex;
+  gap: 1vh;
+  margin-bottom: -4vh;
+
+}
+
+ h1 {
+  font-size: 5vh;
+}
+
+.grade-profile h3 {
+  color: red;
+  margin-top: 5vh;
+}
+
+.button-profile {
+  display: flex;
+  gap: 1em;
+  text-align: center;
+}
+
+.section-profile .button-portofolio {
+  border-radius: 20px;
+  padding: 10px 20px;
+  max-width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.section-profile .button-portofolio:hover {
+  background-color: rgba(235, 8, 8, 0.39);
+  opacity: 0.7;
+}
+
+.section-profile .button-contact {
+  border-radius: 20px;
+  padding: 10px 20px;
+  max-width: fit-content;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.section-profile .button-profile .button-contact:hover {
+  background-color: rgba(255, 0, 0, 0.336);
+  opacity: 0.7;
+}
+
+.section-skills {
+  margin-bottom: 20vh;
+}
+
+.section-skills .title-skills h1 {
+  font-size: 5vh;
+}
+
+.section-skills .icon-skills {
+  margin-bottom: 5vh;
+}
+
+.section-skills .info-skills {
+  display: flex;
+  gap: 3em;
+}
+
+.section-skills .info-skills .card-header img {
+  width: 75%;
+}
+
+.section-skills .card-skills {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 8px red;
+}
+
+.my-certificate {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  align-items: center;
+}
+
+.my-certificate img {
+  width: 50%;
+  z-index: -2;
+}
+
+.my-certificate .certificate-button {
+  height: 10%;
+  border: none;
+  outline: none;
+  background: black;
+  cursor: pointer;
+  padding: 1em;
+  display: flex;
+}
+
+.my-certificate .certificate-button .arrow {
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease-out;
+  outline: none;
+}
+
+.right {
+  margin: auto 0 auto -2em;
+}
+
+.right .arrow {
+  transform: rotate(-45deg);
+}
+
+.left {
+  z-index: 0;
+  margin: auto -2em auto 0;
+}
+
+.left .arrow {
+  transform: rotate(135deg);
+}
+
+.section-contact .iContact {
+  display: flex;
+  gap: 3em;
+}
+
+.section-contact .iContact img:hover {
+  opacity: 0.8;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 0.8vh;
+  padding: 1vh;
+}
+
+@media (max-width: 767px) {
+  main {
+    overflow-x: hidden;
+  }
+  .menu {
+    display: none;
+  }
+  .section-profile {
+    flex-direction: column;
+  }
+
+  .section-profile .grade-profile {
+    display: block !important;
+    margin-bottom: 2vh;
+  }
+
+  .section-profile .teks-profile {
+    font-size: 3vh;
+    text-align: justify;
+  }
+
+  .section-profile .button-profile {
+    flex-direction: column;
+    align-items: center;
+    font-size: 4vh;
+    gap: 0;
+    border-radius: 5%;
+  }
+
+  .grade-profile h3 {
+    margin-top: -2vh;
+    font-size: 5vh;
+  }
+
+  .section-skills .info-skills {
+    flex-direction: column;
+  }
+
+  .my-certificate img{
+    width: 80%;
+  }
+}
+
+
